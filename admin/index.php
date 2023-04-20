@@ -3,6 +3,7 @@
         $url_len = strlen($url_requested);
         
         $actual_path = substr($url_requested,strripos($url_requested,'/')); 
+     
         
         if($actual_path == "/"){
             $page_title = "Home";
@@ -32,6 +33,11 @@
         if($actual_path == "/inventory"){
             $page_title = "inventory";
             require("./templates/admin-inventory-management.php");
+           
+        } 
+        if(str_contains($actual_path,"/detail-product")  ){
+            $page_title = "deetail-product";
+            require("./templates/admin-detail-product.php");
            
         } 
         

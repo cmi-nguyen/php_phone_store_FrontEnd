@@ -7,8 +7,7 @@
             <th scope="col">Price</th>
             <th scope="col">Brand Name</th>
             <th scope="col">Stock</th>
-            <th scope="col">Img</th>
-            <th scope="col">Description</th>
+            
             <th scope="col">Actions</th>
         </tr>
     </thead>
@@ -32,17 +31,16 @@
                 }
             }
             echo '<td>' . $rs->stock . '</td>';
-            echo '<td>' . $rs->imgURL . '</td>';
-            echo '<td>' . $rs->description . '</td>';
+            
 
 
 
             echo '<td>';
             echo '<div class="d-flex">';
-            echo '<form method="get">';
+            echo '<form action="detail-product" method="get">';
             echo '<input type="hidden" name="rowID" value="' . strval($rs->productID) . '">';
-            echo '<button type="submit" name="view" class="btn btn-outline-primary btn-sm">View</button>
-            <button type="submit" name="edit"  class="btn btn-outline-info btn-sm">Edit</button>';
+            echo '<button type="submit" class="btn btn-outline-primary btn-sm">View</button>
+            <button type="submit" class="btn btn-outline-info btn-sm">Edit</button>';
             echo '</form>';
             echo '<form method="post">';
             echo '<input type="hidden" name="rowID" value="' . strval($rs->productID) . '">';
