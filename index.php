@@ -5,7 +5,7 @@
         $actual_path = substr($url_requested,strripos($url_requested,'/')); 
         if($actual_path == "/"){
             $page_title = "Home";
-            require("./public_html/pages/home.php");
+            require("./public_html/pages/trangchu.php");
         }    
         if($actual_path == "/admin"){
             $page_title = "Admin";

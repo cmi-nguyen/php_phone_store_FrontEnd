@@ -21,7 +21,7 @@
 		</div>
 		<hr>
 		<div class="footer-footer">
-			<div class="footer-footer-main"><a href="#"><img src="../../pic/logo.jpg" height="100px" width="200px"></a></div>
+			<div class="footer-footer-main"><a href="#"><img src="public_html/assets/pic/logo.jpg" height="100px" width="200px"></a></div>
 			<div class="footer-footer-main">© 2023 T3 Studio. All rights reserved</div>
 			<div class="footer-footer-main"><a class="email-sp" href="#">SupportT3@t3studio.com</a></div>
 			<div class="footer-footer-main">

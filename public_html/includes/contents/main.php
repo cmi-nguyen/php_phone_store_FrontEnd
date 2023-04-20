@@ -7,7 +7,7 @@
 					<div class="product-card">
 						<div class="badge">Hot</div>
 						<div class="product-tumb">
-							<img src="../../pic/ip14 pro.png" alt="">
+							<img src="public_html\assets\pic\ip14pro.png" alt="">
 						</div>
 						<div class="product-details">
 							<span class="product-catagory">Iphone ,Bộ nhớ 256GB, vàng</span>
@@ -24,7 +24,7 @@
 					<div class="product-card">
 							<div class="badge">Hot</div>
 							<div class="product-tumb">
-								<img src="../../pic/ip14 pro.png" alt="">
+								<img src="public_html\assets\pic\ip14pro.png" alt="">
 							</div>
 							<div class="product-details">
 								<span class="product-catagory">Iphone ,Bộ nhớ 256GB, vàng</span>
@@ -41,7 +41,7 @@
 					<div class="product-card">
 							<div class="badge">Hot</div>
 							<div class="product-tumb">
-								<img src="../../pic/ip14 pro.png" alt="">
+								<img src="public_html\assets\pic\ip14pro.png" alt="">
 							</div>
 							<div class="product-details">
 								<span class="product-catagory">Iphone ,Bộ nhớ 256GB, vàng</span>
@@ -58,7 +58,7 @@
 					<div class="product-card">
 							<div class="badge">Hot</div>
 							<div class="product-tumb">
-								<img src="../../pic/ip14 pro.png" alt="">
+								<img src="public_html\assets\pic\ip14pro.png" alt="">
 							</div>
 							<div class="product-details">
 								<span class="product-catagory">Iphone ,Bộ nhớ 256GB, vàng</span>
@@ -81,7 +81,7 @@
 					<div class="product-card">
 						<div class="badge">Hot</div>
 						<div class="product-tumb">
-							<img src="../../pic/ip14 pro.png" alt="">
+							<img src="public_html\assets\pic\ip14pro.png" alt="">
 						</div>
 						<div class="product-details">
 							<span class="product-catagory">Iphone ,Bộ nhớ 256GB, vàng</span>
@@ -98,7 +98,7 @@
 					<div class="product-card">	
 						<div class="badge">Hot</div>
 							<div class="product-tumb">
-								<img src="../../pic/ip14 pro.png" alt="">
+								<img src="public_html\assets\pic\ip14pro.png" alt="">
 							</div>
 							<div class="product-details">
 								<span class="product-catagory">Iphone ,Bộ nhớ 256GB, vàng</span>
@@ -115,7 +115,7 @@
 					<div class="product-card">
 							<div class="badge">Hot</div>
 							<div class="product-tumb">
-								<img src="../../pic/ip14 pro.png" alt="">
+								<img src="public_html\assets\pic\ip14pro.png" alt="">
 							</div>
 							<div class="product-details">
 								<span class="product-catagory">Iphone ,Bộ nhớ 256GB, vàng</span>
@@ -132,7 +132,7 @@
 					<div class="product-card">
 							<div class="badge">Hot</div>
 							<div class="product-tumb">
-								<img src="../../pic/ip14 pro.png" alt="">
+								<img src="public_html\assets\pic\ip14pro.png" alt="">
 							</div>
 							<div class="product-details">
 								<span class="product-catagory">Iphone ,Bộ nhớ 256GB, vàng</span>
@@ -155,7 +155,7 @@
 					<div class="product-card">
 						<div class="badge">Hot</div>
 						<div class="product-tumb">
-							<img src="../../pic/ip14 pro.png" alt="">
+							<img src="public_html\assets\pic\ip14pro.png" alt="">
 						</div>
 						<div class="product-details">
 							<span class="product-catagory">Iphone ,Bộ nhớ 256GB, vàng</span>
@@ -172,7 +172,7 @@
 					<div class="product-card">
 							<div class="badge">Hot</div>
 							<div class="product-tumb">
-								<img src="../../pic/ip14 pro.png" alt="">
+								<img src="public_html\assets\pic\ip14pro.png" alt="">
 							</div>
 							<div class="product-details">
 								<span class="product-catagory">Iphone ,Bộ nhớ 256GB, vàng</span>
@@ -189,7 +189,7 @@
 					<div class="product-card">
 							<div class="badge">Hot</div>
 							<div class="product-tumb">
-								<img src="../../pic/ip14 pro.png" alt="">
+								<img src="public_html\assets\pic\ip14pro.png" alt="">
 							</div>
 							<div class="product-details">
 								<span class="product-catagory">Iphone ,Bộ nhớ 256GB, vàng</span>
@@ -206,7 +206,7 @@
 					<div class="product-card">
 							<div class="badge">Hot</div>
 							<div class="product-tumb">
-								<img src="../../pic/ip14 pro.png" alt="">
+								<img src="public_html\assets\pic\ip14pro.png" alt="">
 							</div>
 							<div class="product-details">
 								<span class="product-catagory">Iphone ,Bộ nhớ 256GB, vàng</span>
@@ -223,7 +223,7 @@
 					<div class="product-card">
 						<div class="badge">Hot</div>
 						<div class="product-tumb">
-							<img src="../../pic/ip14 pro.png" alt="">
+							<img src="public_html\assets\pic\ip14pro.png" alt="">
 						</div>
 						<div class="product-details">
 							<span class="product-catagory">Iphone ,Bộ nhớ 256GB, vàng</span>
@@ -240,7 +240,7 @@
 					<div class="product-card">
 							<div class="badge">Hot</div>
 							<div class="product-tumb">
-								<img src="../../pic/ip14 pro.png" alt="">
+								<img src="public_html\assets\pic\ip14pro.png" alt="">
 							</div>
 							<div class="product-details">
 								<span class="product-catagory">Iphone ,Bộ nhớ 256GB, vàng</span>
@@ -257,7 +257,7 @@
 					<div class="product-card">
 							<div class="badge">Hot</div>
 							<div class="product-tumb">
-								<img src="../../pic/ip14 pro.png" alt="">
+								<img src="public_html\assets\pic\ip14pro.png" alt="">
 							</div>
 							<div class="product-details">
 								<span class="product-catagory">Iphone ,Bộ nhớ 256GB, vàng</span>
@@ -274,7 +274,7 @@
 					<div class="product-card">
 							<div class="badge">Hot</div>
 							<div class="product-tumb">
-								<img src="../../pic/ip14 pro.png" alt="">
+								<img src="public_html\assets\pic\ip14pro.png" alt="">
 							</div>
 							<div class="product-details">
 								<span class="product-catagory">Iphone ,Bộ nhớ 256GB, vàng</span>

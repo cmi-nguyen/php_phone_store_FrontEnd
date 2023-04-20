@@ -3,7 +3,7 @@
 		<div class="header-main">
 			<div class="header-main-contain">
 				<div class="header-main-logo">
-					<a href="#"><img src="../../pic/logo.jpg" alt="logo" height="100px" width="200px"></a>
+					<a href="#"><img src="public_html/assets/pic/logo.jpg" alt="logo" height="50px" width="70px"></a>
 				</div>
 				<div class="header-main-search">
 					<input type="text" placeholder="Tìm kiếm">

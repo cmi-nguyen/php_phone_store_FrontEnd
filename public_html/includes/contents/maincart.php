@@ -16,7 +16,7 @@
 							<th>Tổng giá</th>
 						</tr>
 						<tr>
-							<td class="img-table"><img src="../../pic/ip14.png"></td>
+							<td class="img-table"><img src="public_html\assets\pic\ip14.png"></td>
 							<td class="name-table">Y2K CYBERDOTE PBT KEYCAP SET</td>
 							<td class="pre-price-table">$80.00</td>
 							<td class="quantity-table"><input type="number" min="1" max="99" value="1"></td>
@@ -24,7 +24,7 @@
 							<td class="remove"><button><i class="fa-solid fa-xmark"></i></button></td>
 						</tr>
 						<tr>
-							<td class="img-table"><img src="../../pic/ip14.png"></td>
+							<td class="img-table"><img src="public_html\assets\pic\ip14.png"></td>
 							<td class="name-table">Y2K CYBERDOTE PBT KEYCAP SET</td>
 							<td class="pre-price-table">$80.00</td>
 							<td class="quantity-table"><input type="number" min="1" max="99" value="1"></td>

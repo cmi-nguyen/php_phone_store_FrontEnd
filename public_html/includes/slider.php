@@ -2,7 +2,7 @@
 		<div class="slide-Show-Container">
 			<div class="slide-Show">
 				<div class="slide-image">
-					<img src="../../pic/samsungbanner3.jpeg" alt="iphone 14 pro">
+					<img src="public_html\assets\pic\samsungbanner3.jpeg" alt="iphone 14 pro">
 				</div>
 				<div class="slide-detail">
 					<h2>Iphone 14 promax</h2>
@@ -13,7 +13,7 @@
 			</div>
 			<div class="slide-Show">
 				<div class="slide-image">
-					<img src="../../pic/vivo.webp" alt="iphone 14 pro">
+					<img src="public_html\assets\pic\vivo.webp" alt="iphone 14 pro">
 				</div>
 				<div class="slide-detail">
 					<h2>Iphone 14 promax</h2>
@@ -24,7 +24,7 @@
 			</div>
 			<div class="slide-Show">
 				<div class="slide-image">
-					<img src="../../pic/banner.jpg" alt="iphone 14 pro">
+					<img src="public_html\assets\pic\banner.jpg" alt="iphone 14 pro">
 				</div>
 				<div class="slide-detail">
 					<h2>Iphone 14 promax</h2>
@@ -35,7 +35,7 @@
 			</div>
 			<div class="slide-Show">
 				<div class="slide-image">
-					<img src="../../pic/maxresdefault.jpg" alt="iphone 14 pro">
+					<img src="public_html\assets\pic\maxresdefault.jpg" alt="iphone 14 pro">
 				</div>
 				<div class="slide-detail">
 					<h2>Iphone 14 promax</h2>
@@ -46,7 +46,7 @@
 			</div>
 			<div class="slide-Show">
 				<div class="slide-image">
-					<img src="../../pic/vivoslider4.jpg" alt="iphone 14 pro">
+					<img src="public_html\assets\pic\vivoslider4.jpg" alt="iphone 14 pro">
 				</div>
 				<div class="slide-detail">
 					<h2>Iphone 14 promax</h2>
@@ -57,7 +57,7 @@
 			</div>
 			<div class="slide-Show">
 				<div class="slide-image">
-					<img src="../../pic/samsungslider3.jpg" alt="iphone 14 pro">
+					<img src="public_html\assets\pic\samsungslider3.jpg" alt="iphone 14 pro">
 				</div>
 				<div class="slide-detail">
 					<h2>Iphone 14 promax</h2>
@@ -71,22 +71,22 @@
 			<a class="next" onclick="plusSlides(1)">&#10095;</a>
 			<div class="row">
 				<div class="column">
-				  <img class="demo cursor" src="../../pic/samsungbanner3.jpeg" style="width:100%" onclick="currentSlide(1)">
+				  <img class="demo cursor" src="public_html\assets\pic\samsungbanner3.jpeg" style="width:100%" onclick="currentSlide(1)">
 				</div>
 				<div class="column">
-				  <img class="demo cursor" src="../../pic/vivo.webp" style="width:100%" onclick="currentSlide(2)">
+				  <img class="demo cursor" src="public_html\assets\pic\vivo.webp" style="width:100%" onclick="currentSlide(2)">
 				</div>
 				<div class="column">
-				  <img class="demo cursor" src="../../pic/banner.jpg" style="width:100%" onclick="currentSlide(3)">
+				  <img class="demo cursor" src="public_html\assets\pic\banner.jpg" style="width:100%" onclick="currentSlide(3)">
 				</div>
 				<div class="column">
-				  <img class="demo cursor" src="../../pic/maxresdefault.jpg" style="width:100%" onclick="currentSlide(4)">
+				  <img class="demo cursor" src="public_html\assets\pic\maxresdefault.jpg" style="width:100%" onclick="currentSlide(4)">
 				</div>
 				<div class="column">
-				  <img class="demo cursor" src="../../pic/vivoslider4.jpg" style="width:100%" onclick="currentSlide(5)" >
+				  <img class="demo cursor" src="public_html\assets\pic\vivoslider4.jpg" style="width:100%" onclick="currentSlide(5)" >
 				</div>
 				<div class="column">
-				  <img class="demo cursor" src="../../pic/samsungslider3.jpg" style="width:100%" onclick="currentSlide(6)" >
+				  <img class="demo cursor" src="public_html\assets\pic\samsungslider3.jpg" style="width:100%" onclick="currentSlide(6)" >
 				</div>
 			</div>
 		</div>
