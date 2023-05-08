@@ -18,10 +18,25 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active"  href="#">Visit site</a>
-        </li>
         
+        <li class="nav-item">
+          <a class="nav-link active"  href="./">Dashboard</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Management
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="user">Users</a></li>
+            <li><a class="dropdown-item" href="product">Products</a></li>
+            
+            <li><a class="dropdown-item" href="brand">Brands</a></li>
+            <li><a class="dropdown-item" href="order">Orders</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active"  href="../">Visit site</a>
+        </li>
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">

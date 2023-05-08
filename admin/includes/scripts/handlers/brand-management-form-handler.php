@@ -6,10 +6,10 @@
         }
         function viewItem(){
             
-            echo  $_POST['rowID'];
+            echo  $_POST['id'];
         }
         function deleteItem(){
-            $url= 'http://localhost:8080/brand/'.''.$_POST['rowID'];
+            $url= 'http://localhost:8080/brand/'.''.$_POST['id'];
             deleteAPI($url);
         }
         function editItem(){

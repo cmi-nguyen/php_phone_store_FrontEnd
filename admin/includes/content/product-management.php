@@ -1,4 +1,4 @@
-<div class="col">
+<div class="container">
     <h3>Product Management</h3>
     <div class="container">
         <form method="post">

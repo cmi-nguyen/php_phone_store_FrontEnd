@@ -35,7 +35,7 @@
 
             echo '<td>';
             echo '<form method="post">';
-            echo '<input type="hidden" name="rowID" value="' . strval($rs->billID) . '">';
+            echo '<input type="hidden" name="id" value="' . strval($rs->billID) . '">';
             require("./includes/componement/buttons/table-button-group.php");
             echo '</form>';
             echo '</td>';

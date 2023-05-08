@@ -7,7 +7,7 @@
             <th scope="col">Price</th>
             <th scope="col">Brand Name</th>
             <th scope="col">Stock</th>
-            
+
             <th scope="col">Actions</th>
         </tr>
     </thead>
@@ -31,19 +31,22 @@
                 }
             }
             echo '<td>' . $rs->stock . '</td>';
-            
+
 
 
 
             echo '<td>';
             echo '<div class="d-flex">';
             echo '<form action="detail-product" method="get">';
-            echo '<input type="hidden" name="rowID" value="' . strval($rs->productID) . '">';
-            echo '<button type="submit" class="btn btn-outline-primary btn-sm">View</button>
-            <button type="submit" class="btn btn-outline-info btn-sm">Edit</button>';
+            echo '<input type="hidden" name="id" value="' . strval($rs->productID) . '">';
+            echo '<button type="submit" class="btn btn-outline-primary btn-sm">View</button>';
+            echo '</form>';
+            echo '<form action="edit-product" method="get">';
+            echo '<input type="hidden" name="id" value="' . strval($rs->productID) . '">';
+            echo '<button type="submit" class="btn btn-outline-info btn-sm">Edit</button>';
             echo '</form>';
             echo '<form method="post">';
-            echo '<input type="hidden" name="rowID" value="' . strval($rs->productID) . '">';
+            echo '<input type="hidden" name="id" value="' . strval($rs->productID) . '">';
             echo '<button type="submit" name="delete" class="btn btn-outline-danger btn-sm">Delete</button>';
             echo '</form>';
             echo '</div>';

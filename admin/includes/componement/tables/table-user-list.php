@@ -33,14 +33,14 @@
             echo '<td>';
             echo '<div class="d-flex">';
             echo '<form method="get">';
-            echo '<input type="hidden" name="rowID" value="' . strval($rs->userID) . '">';
+            echo '<input type="hidden" name="id" value="' . strval($rs->userID) . '">';
             echo '<button type="submit" name="view" class="btn btn-outline-primary btn-sm">View</button>
             <button type="submit" name="edit"  class="btn btn-outline-info btn-sm">Edit</button>';
 
             //require("./includes/componement/buttons/table-button-group.php");
             echo '</form>';
             echo '<form method="post">';
-            echo '<input type="hidden" name="rowID" value="' . strval($rs->userID) . '">';
+            echo '<input type="hidden" name="id" value="' . strval($rs->userID) . '">';
             echo '<button type="submit" name="delete" class="btn btn-outline-danger btn-sm">Delete</button>';
             echo  '</form>';
             echo '</div>';

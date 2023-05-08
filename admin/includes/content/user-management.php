@@ -1,4 +1,4 @@
-<div class="col">
+<div class="container">
     <h3>User management</h3>
     <div class="container">
         <form method="post">
@@ -24,4 +24,3 @@
     </div>
 </div>
 
-</div>

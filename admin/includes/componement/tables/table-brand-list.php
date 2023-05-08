@@ -21,7 +21,7 @@
             echo '<td>' . $rs->description . '</td>';
             echo '<td>';
             echo '<form method="post">';
-            echo '<input type="hidden" name="rowID" value="' . strval($rs->brandID) . '">';
+            echo '<input type="hidden" name="id" value="' . strval($rs->brandID) . '">';
             require("./includes/componement/buttons/table-button-group.php");
             echo '</form>';
             echo '</td>';

@@ -7,7 +7,7 @@ function testfun()
     echo $_POST['search-bar'];
 }
 function deleteItem(){
-    $url= 'http://localhost:8080/product/'.''.$_POST['rowID'];
+    $url= 'http://localhost:8080/product/'.''.$_POST['id'];
     deleteAPI($url);
 }
 // check which button is clicked 
@@ -27,12 +27,6 @@ if (array_key_exists('button3', $_POST)) {
 
     //  var_dump(json_encode($data));
     postAPI($data,$url);
-}
-if (array_key_exists('view', $_POST)) {
-    echo "view btn";
-}
-if (array_key_exists('edit', $_POST)) {
-    echo "edit btn";
 }
 if (array_key_exists('delete', $_POST)) {
     deleteItem();

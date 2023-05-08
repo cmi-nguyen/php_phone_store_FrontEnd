@@ -40,4 +40,9 @@
             require("./templates/admin-detail-product.php");
            
         } 
+        if(str_contains($actual_path,"/edit-product")  ){
+            $page_title = "edit-product";
+            require("./templates/admin-edit-product.php");
+           
+        } 
         

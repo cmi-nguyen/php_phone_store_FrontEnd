@@ -1,4 +1,4 @@
-<div class="col">
+<div class="container">
     <h3>Bill Management</h3>
     <div class="container">
         <form method="post">
@@ -25,4 +25,3 @@
     </div>
 </div>
 
-</div>
