@@ -20,6 +20,11 @@ if ($actual_path == "/product") {
 
   require("./public_html/pages/product.php");
 }
+if ($actual_path == "/cart") {
+  $page_title = "product";
+
+  require("./public_html/pages/cart.php");
+}
 
 if(str_contains($actual_path,"/product-detail")){
   $page_title = "product detail";

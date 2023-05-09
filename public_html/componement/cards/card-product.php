@@ -4,7 +4,8 @@
     <h5 class="card-title"><?php echo $rs->productName ?></h5>
     <p class="card-text"><?php echo $rs->price.' $' ?></p>
     <form method="post">
-        <button class="btn btn-secondary">Add to cart</button>
+        <button name="addToCartBtn" class="btn btn-secondary">Add to cart</button>
+        <input type="hidden" name="id" value="<?php echo $rs->productID?>">
     </form>
   </div>
 </div>
