@@ -21,7 +21,6 @@
         require_once("./includes/scripts/handlers/product-management-form-handler.php");
         require_once("./includes/componement/tables/table-search-product.php");
         require_once("./includes/componement/forms/form-add-product.php");
-        require_once("./includes/componement/forms/form-pagination.php");
         ?>
     </div>
 </div>
