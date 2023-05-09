@@ -1,5 +1,5 @@
 <div class="container">
-    <h3>Product Management</h3>
+    <h3>Search product</h3>
     <div class="container">
         <form method="get" action="search-product">
             <div class="row">
@@ -19,7 +19,7 @@
         </form>
         <?php
         require_once("./includes/scripts/handlers/product-management-form-handler.php");
-        require_once("./includes/componement/tables/table-product-list.php");
+        require_once("./includes/componement/tables/table-search-product.php");
         require_once("./includes/componement/forms/form-add-product.php");
         require_once("./includes/componement/forms/form-pagination.php");
         ?>

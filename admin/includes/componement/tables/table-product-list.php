@@ -19,8 +19,23 @@
 
         $resp = getList($url1);
         $brands = getList($url2);
+        // pagination and search
+        $numberOfItemPerPage = 5;
+        $numberOfPage = ceil(sizeof($resp) / $numberOfItemPerPage);
 
+        if (isset($_GET['page'])) {
+            $currentPage = $_GET['page'];
+        } else {
+            $_GET['page'] = 1;
+            $currentPage = $_GET['page'];
+        }
+        $i = 0;
+        $j = 1;
         foreach ($resp as $rs) {
+            if ($i++ < $numberOfItemPerPage * ($currentPage - 1))
+                continue;
+            if ($j++ > $numberOfItemPerPage * $currentPage)
+                break;
             echo '<tr>';
             echo '<th scope="row">' . $rs->productID . '</th>';
             echo '<td>' . $rs->productName . '</td>';
@@ -31,10 +46,6 @@
                 }
             }
             echo '<td>' . $rs->stock . '</td>';
-
-
-
-
             echo '<td>';
             echo '<div class="d-flex">';
             echo '<form action="detail-product" method="get">';
@@ -52,6 +63,7 @@
             echo '</div>';
             echo '</td>';
             echo '</tr>';
+
         }
         ?>
     </tbody>

@@ -15,7 +15,7 @@
             require("./templates/admin-user-management.php");
            
         } 
-        if($actual_path == "/product"){
+        if(str_contains($actual_path,"/product")  ){
             $page_title = "product";
             require("./templates/admin-product-management.php");
            
@@ -43,6 +43,11 @@
         if(str_contains($actual_path,"/edit-product")  ){
             $page_title = "edit-product";
             require("./templates/admin-edit-product.php");
+           
+        } 
+        if(str_contains($actual_path,"/search-product")  ){
+            $page_title = "search-product";
+            require("./templates/admin-search-product.php");
            
         } 
         

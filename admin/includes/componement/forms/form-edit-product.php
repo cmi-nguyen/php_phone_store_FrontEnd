@@ -38,8 +38,11 @@ $resp = getSingleItem($url);
     <div class="mb-3">
         <?php require("form-brand-sellect.php") ?>
     </div>
-    <div class="d-flex justify-content-evenly">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-        <button type="submit" name="button3" id="button3" class="btn btn-primary">Save</button>
+    <form action="user" method="post" >
+    <div class="d-flex justify-content-center">
+        <button type="submit" name="backBtn" id="backBtn" class="btn btn-secondary">Cancel</button>
+        <button type="submit" name="saveEdit" id="saveEdit" class="btn btn-primary">Save</button>
+        <button type="submit" name="deleteBtn" id="deleteBtn" class="btn btn-danger">Delete</button>
     </div>
+    </form>
 </form>
