@@ -35,8 +35,8 @@ if ($actual_path == "/cart") {
   require("./public_html/pages/cart.php");
 }
 
-if(str_contains($actual_path,"/product-detail")){
+if(str_contains($actual_path,"/detail-product")){
   $page_title = "product detail";
 
-  
+  require("./public_html/pages/product-detail.php");
 }

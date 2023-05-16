@@ -12,6 +12,7 @@ if (array_key_exists('loginBtn', $_POST)) {
         }
     }
     if (isset($_SESSION['name'])) {
+        $_SESSION['cartItems']=array();
         echo '<script>';
         echo 'window.location = "/php_phone_store_FrontEnd"';
         echo '</script>';
