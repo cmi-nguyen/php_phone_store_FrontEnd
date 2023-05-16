@@ -7,6 +7,12 @@ class cartItem{
   public $price;
   public $quantity;
 }
+class user{
+  public $userID;
+  public $userName;
+  public $name;
+  public $accessLevel;
+}
 
 
 

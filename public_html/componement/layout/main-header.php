@@ -50,7 +50,7 @@
           </form>
           <form method="post">
             <?php
-            if (isset($_SESSION['name'])) {
+            if (isset($_SESSION['user'])) {
               echo '<button class="btn btn-outline-danger" name="logoutBtn" type="submit">Logout</button>';
             } else {
               echo '<button class="btn btn-outline-danger" name="loginBtn" type="submit">Login</button>';
@@ -82,7 +82,7 @@
     echo '</script>';
   }
   if (array_key_exists('cartBtn', $_POST)) {
-    if (isset($_SESSION['name'])) {
+    if (isset($_SESSION['user'])) {
       echo '<script>';
       echo 'window.location = "/php_phone_store_FrontEnd/cart"';
       echo '</script>';
@@ -92,7 +92,7 @@
 
   }
   if (array_key_exists('addToCartBtn', $_POST)) {
-    if (isset($_SESSION['name'])) {
+    if (isset($_SESSION['user'])) {
       $i = sizeof($_SESSION['cartItems']);
       $newItem = new cartItem();
       $url = 'http://localhost:8080/product';
@@ -108,7 +108,7 @@
       }
 
       $_SESSION['cartItems'][$i] = $newItem;
-      
+
     } else
       require_once("public_html\componement\alerts\alert-cart.php");
 

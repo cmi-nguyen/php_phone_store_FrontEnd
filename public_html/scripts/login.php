@@ -7,11 +7,15 @@ if (array_key_exists('loginBtn', $_POST)) {
 
     foreach ($resp as $rs) {
         if (strcmp($_POST['username'], $rs->userName)==0 && strcmp($_POST['password'], $rs->password)==0) {
-            $_SESSION['name'] = $_POST['username'];
+            $loggedInUser = new user();
+            $loggedInUser->userID=$rs->userID;
+            $loggedInUser->userName=$rs->userName;
+            $loggedInUser->name=$rs->name;
+            $_SESSION['user'] = $loggedInUser;
             break;
         }
     }
-    if (isset($_SESSION['name'])) {
+    if (isset($_SESSION['user'])) {
         $_SESSION['cartItems']=array();
         echo '<script>';
         echo 'window.location = "/php_phone_store_FrontEnd"';
