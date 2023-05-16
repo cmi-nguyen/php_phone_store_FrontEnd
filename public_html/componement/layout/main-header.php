@@ -109,8 +109,10 @@
       }
 
       $_SESSION['cartItems'][$i] = $newItem;
+      
+      
 
     } else
       require_once("public_html\componement\alerts\alert-cart.php");
-
+      
   }

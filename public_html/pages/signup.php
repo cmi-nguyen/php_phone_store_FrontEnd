@@ -13,7 +13,7 @@
 <body class="text-center">
     
 
-<main class="form-signin w-100 m-auto">
+<div class="container" style="width:50%">
   <form method="post">
     
     <h1 class="h3 mb-3 fw-normal">Sign up</h1>
@@ -45,7 +45,7 @@
     <button class=" btn btn-primary" type="submit" name="signupBtn">Sign-up</button>
     <p class="mt-5 mb-3 text-body-secondary">© 2017–2023</p>
   </form>
-</main>
+</div>
 
 
     

@@ -18,10 +18,18 @@ if (array_key_exists('loginBtn', $_POST)) {
     }
     if (isset($_SESSION['user'])) {
         $_SESSION['cartItems']=array();
-       
+        if ($_SESSION['user']->accessLevel) {
+            
+            echo '<script>';
+            echo 'window.location = "/php_phone_store_FrontEnd/admin"';
+            echo '</script>';
+        }
+        else{
             echo '<script>';
             echo 'window.location = "/php_phone_store_FrontEnd/"';
             echo '</script>';
+        }
+            
         
         
     }

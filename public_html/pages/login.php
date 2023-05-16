@@ -13,7 +13,7 @@
 <body class="text-center">
     
 
-<main class="form-signin w-100 m-auto">
+<div class="container" style="width: 60%">
   <form method="post">
     
     <h1 class="h3 mb-3 fw-normal">Please login</h1>
@@ -27,10 +27,16 @@
       <label for="floatingPassword">Password</label>
     </div>
 
-    <button class="w-100 btn btn-lg btn-primary" type="submit" name="loginBtn">Login</button>
+    <div class="d-flex justify-content-center">
+    <button class="btn btn-primary" type="submit" name="loginBtn">Login</button>
+    <a href="/php_phone_store_FrontEnd/signup">
+    <button class="btn btn-primary" type="button">Sign in</button>
+    </a>
+    </div>
+    
     <p class="mt-5 mb-3 text-body-secondary">© 2017–2023</p>
   </form>
-</main>
+</div>
 
 
     
