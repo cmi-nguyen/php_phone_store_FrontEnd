@@ -1,5 +1,14 @@
 <?php
 session_start();
+// create cart
+class cartItem{
+  public $productID;
+  public $productName;
+  public $price;
+  public $quantity;
+}
+
+
 
 $url_requested = $_SERVER['REQUEST_URI'];
 $url_len = strlen($url_requested);
