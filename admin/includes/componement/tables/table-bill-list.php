@@ -28,15 +28,16 @@
             echo '</td>';
             echo '<td>' . $rs->total . '</td>';
             echo '<td>' . $rs->date . '</td>';
-            if ($rs->status = "false") {
-                echo '<td>' . 'Processing' . '</td>';
-            } else
+            if ($rs->status) {
                 echo '<td>' . 'Completed' . '</td>';
+            } else
+                echo '<td>' . 'Processing' . '</td>';
 
             echo '<td>';
             echo '<form method="post">';
             echo '<input type="hidden" name="id" value="' . strval($rs->billID) . '">';
-            require("./includes/componement/buttons/table-button-group.php");
+            echo '<button type="submit" name="view" class="btn btn-outline-primary btn-sm">View</button>';
+            echo '<button type="submit" name="aproveBtn" class="btn btn-outline-danger btn-sm">Approve</button>';
             echo '</form>';
             echo '</td>';
             echo '</tr>';

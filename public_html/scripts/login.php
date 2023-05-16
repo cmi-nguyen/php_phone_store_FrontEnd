@@ -11,15 +11,19 @@ if (array_key_exists('loginBtn', $_POST)) {
             $loggedInUser->userID=$rs->userID;
             $loggedInUser->userName=$rs->userName;
             $loggedInUser->name=$rs->name;
+            $loggedInUser->accessLevel=$rs->accessLevel;
             $_SESSION['user'] = $loggedInUser;
             break;
         }
     }
     if (isset($_SESSION['user'])) {
         $_SESSION['cartItems']=array();
-        echo '<script>';
-        echo 'window.location = "/php_phone_store_FrontEnd"';
-        echo '</script>';
+       
+            echo '<script>';
+            echo 'window.location = "/php_phone_store_FrontEnd/"';
+            echo '</script>';
+        
+        
     }
 
 }

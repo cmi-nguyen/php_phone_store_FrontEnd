@@ -30,6 +30,11 @@ if ($actual_path == "/login") {
 
   require("./public_html/pages/login.php");
 }
+if ($actual_path == "/signup") {
+  $page_title = "Admin";
+
+  require("./public_html/pages/signup.php");
+}
 if ($actual_path == "/product") {
   $page_title = "product";
 

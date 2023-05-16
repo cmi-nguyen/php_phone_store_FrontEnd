@@ -2,7 +2,7 @@
 require_once("admin\includes\scripts\api\APIs.php");
 //$url = 'http://localhost:8080/user';
 //$resp = getList($url);
-
+var_dump($_SESSION['user']);
 if (array_key_exists('removeBtn', $_POST)) {
     $index = array_search($_POST['itemID'], $_SESSION['cartItems']);
     unset($_SESSION['cartItems'][$index]);

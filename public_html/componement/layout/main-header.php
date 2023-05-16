@@ -70,6 +70,7 @@
     </div>
   </nav>
   <?php
+  
   if (array_key_exists('logoutBtn', $_POST)) {
     session_destroy();
     echo '<script>';

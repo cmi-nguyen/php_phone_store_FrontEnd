@@ -7,13 +7,9 @@
                     <div class="input-group">
                         <input type="search" name="search-bar" class="form-control" placeholder="Search Product"
                             aria-label="Search Product" aria-describedby="button-addon1">
-                        <button class="btn btn-outline-secondary" name="button1" type="submit"
+                        <button class="btn btn-outline-secondary" name="button1" type="button"
                             id="button1">Search</button>
                     </div>
-                </div>
-                <div class="col">
-                    <button class="btn btn-primary" name="button2" type="button" id="button2" data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop2">Add bill</button>
                 </div>
             </div>
         </form>
