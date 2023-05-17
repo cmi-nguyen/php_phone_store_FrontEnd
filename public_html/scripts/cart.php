@@ -28,20 +28,36 @@ if (array_key_exists('decreaseBtn', $_POST)) {
         echo 'quantity must greater than 1';
 }
 if (array_key_exists('checkoutBtn', $_POST)) {
-    if(sizeOf($_SESSION['cartItems'])>0){
+    if (sizeOf($_SESSION['cartItems']) > 0) {
+        // create bill
         $url = 'http://localhost:8080/bill';
         $resp = getList($url);
-        $data['billID'] = sizeof($resp) + 1;
+        $data['billID'] = sizeof($resp);
         $data['userID'] = $_SESSION['user']->userID;
         $data['total'] = $total;
         $data['status'] = false;
         $data['date'] = date("y/m/d");
         postAPI($data, $url);
-        $_SESSION['cartItems']= array();
+        // add bill detail
+
+        foreach ($_SESSION['cartItems'] as $cartItem) {
+            $url2 = 'http://localhost:8080/billdetail';
+            $detailResp = getList($url2);
+            $data2['billDetailID'] = sizeof($detailResp);
+            $data2['billID'] = $data['billID'];
+            $data2['productID'] = $cartItem->productID;
+            $data2['quantity'] = $cartItem->quantity;
+
+            postAPI($data2, $url2);
+        }
+
+        // reset cart
+        $_SESSION['cartItems'] = array();
+
         echo '<script>';
         echo 'window.location = "/php_phone_store_FrontEnd/cart"';
         echo '</script>';
-    }
-    else  echo "There is no item in cart";
-    
+    } else
+        echo "There is no item in cart";
+
 }

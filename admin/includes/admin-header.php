@@ -47,7 +47,7 @@
     </div>
   </nav>
   <?php if (array_key_exists('logoutBtn', $_POST)) {
-    
+    session_destroy();
     echo '<script>';
     echo 'window.location = "/php_phone_store_FrontEnd/"';
     echo '</script>';

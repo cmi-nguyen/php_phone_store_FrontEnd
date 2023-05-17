@@ -32,6 +32,6 @@ if (array_key_exists('loginBtn', $_POST)) {
             
         
         
-    }
+    }else echo "Wrong username";
 
 }

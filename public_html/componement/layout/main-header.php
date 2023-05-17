@@ -61,58 +61,13 @@
             <button class="btn btn-outline-info" name="cartBtn" type="submit">Cart
               <?php if (isset($_SESSION['cartItems'])) {
                 echo '(' . sizeof($_SESSION['cartItems']) . ')';
-              }else echo '(0)' ?>
-            </button>
-          </form>
+              } else
+                echo '(0)' ?>
+              </button>
+            </form>
+          </div>
+
         </div>
-
       </div>
-    </div>
-  </nav>
-  <?php
-  
-  if (array_key_exists('logoutBtn', $_POST)) {
-    session_destroy();
-    echo '<script>';
-    echo 'window.location = "/php_phone_store_FrontEnd/"';
-    echo '</script>';
-  }
-  if (array_key_exists('loginBtn', $_POST)) {
-    echo '<script>';
-    echo 'window.location = "/php_phone_store_FrontEnd/login"';
-    echo '</script>';
-  }
-  if (array_key_exists('cartBtn', $_POST)) {
-    if (isset($_SESSION['user'])) {
-      echo '<script>';
-      echo 'window.location = "/php_phone_store_FrontEnd/cart"';
-      echo '</script>';
-    } else
-      require_once("public_html\componement\alerts\alert-cart.php");
-
-
-  }
-  if (array_key_exists('addToCartBtn', $_POST)) {
-    if (isset($_SESSION['user'])) {
-      $i = sizeof($_SESSION['cartItems']);
-      $newItem = new cartItem();
-      $url = 'http://localhost:8080/product';
-      $products = getList($url);
-      foreach ($products as $product) {
-        # code...
-        if ($product->productID == $_POST['id']) {
-          $newItem->productID = $_POST['id'];
-          $newItem->productName = $product->productName;
-          $newItem->price = $product->price;
-          $newItem->quantity = 1;
-        }
-      }
-
-      $_SESSION['cartItems'][$i] = $newItem;
-      
-      
-
-    } else
-      require_once("public_html\componement\alerts\alert-cart.php");
-      
-  }
+    </nav>
+<?php require("public_html\scripts\header.php");

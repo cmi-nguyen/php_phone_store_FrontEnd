@@ -13,7 +13,7 @@
 <body class="text-center">
     
 
-<div class="container" style="width: 60%">
+<div class="container" style="width: 40%">
   <form method="post">
     
     <h1 class="h3 mb-3 fw-normal">Please login</h1>
@@ -38,7 +38,11 @@
   </form>
 </div>
 
-
+<script>
+  function test(){
+    
+  }
+</script>
     
   
 
