@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" style="width: 40%">
     <h3>Product Edit</h3>
     <div class="container">
     <?php

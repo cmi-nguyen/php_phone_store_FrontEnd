@@ -57,9 +57,14 @@ if (isset($_SESSION)) {
             require("./templates/admin-search-product.php");
 
         }
+        if (str_contains($actual_path, "/detail-bill")) {
+            $page_title = "search-product";
+            require("./templates/admin-billdetail-management.php");
+
+        }
     } else {
         echo '<script>';
-        echo 'window.location = "/php_phone_store_FrontEnd/"';
+        echo 'window.location = "/php_phone_store_FrontEnd/login"';
         echo '</script>';
     }
 }

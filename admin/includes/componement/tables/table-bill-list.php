@@ -2,8 +2,9 @@
     <caption>List of Brands</caption>
     <thead class="table-dark">
         <tr>
-            <th scope="col">Bill ID</th>
+            <th scope="col">Bill ID</th>    
             <th scope="col">User Name</th>
+            <th scope="col">User ID</th>
             <th scope="col">Total</th>
             <th scope="col">Date</th>
             <th scope="col">Status</th>
@@ -22,10 +23,12 @@
             echo '<tr>';
             echo '<th scope="row">' . $rs->billID . '</th>';
             echo '<td>';
+          
             $url2 = 'http://localhost:8080/user/' . '' . $rs->userID;
             $resp2 = getSingleItem($url2);
             echo $resp2->userName;
             echo '</td>';
+            echo '<td>' . $rs->userID . '</td>';
             echo '<td>' . $rs->total . '</td>';
             echo '<td>' . $rs->date . '</td>';
             if ($rs->status) {
@@ -36,8 +39,15 @@
             echo '<td>';
             echo '<form method="post">';
             echo '<input type="hidden" name="id" value="' . strval($rs->billID) . '">';
-            echo '<button type="submit" name="view" class="btn btn-outline-primary btn-sm">View</button>';
-            echo '<button type="submit" name="aproveBtn" class="btn btn-outline-danger btn-sm">Approve</button>';
+            echo '<a href="detail-bill?id='.$rs->billID.'">';
+            echo '<button type="button" name="view" class="btn btn-outline-primary btn-sm">View</button>';
+            echo '</a>';
+            if ($rs->status){
+               // echo '<button type="submit" name="aproveBtn" class="btn btn-disabled  btn-outline-danger btn-sm">Approve</button>';
+            } else {
+                echo '<button type="submit" name="aproveBtn" class="btn btn-outline-danger btn-sm">Approve</button>';
+            }
+            
             echo '</form>';
             echo '</td>';
             echo '</tr>';

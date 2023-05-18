@@ -37,7 +37,7 @@
               $respBrand = getList($url);
               foreach ($respBrand as $resBrand) {
                 # code...
-                echo '<li><a class="dropdown-item" href="#">' . $resBrand->brandName . '</a></li>';
+                echo '<li><a class="dropdown-item" href="category?id='.$resBrand->brandID.'">' . $resBrand->brandName . '</a></li>';
               }
               ?>
             </ul>
@@ -45,18 +45,13 @@
         </ul>
         <div class="d-flex">
           <form class="d-flex" role="search" method="get" action="search-product">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
+            <?php if(isset($_SESSION['user'])){
+              echo '<a href="profile"><button type="button" class="btn btn-outline-primary">'.$_SESSION['user']->userName.'</button></a>';
+            }?>
           </form>
-          <form method="post">
-            <?php
-            if (isset($_SESSION['user'])) {
-              echo '<button class="btn btn-outline-danger" name="logoutBtn" type="submit">Logout</button>';
-            } else {
-              echo '<button class="btn btn-outline-danger" name="loginBtn" type="submit">Login</button>';
-            }
-            ?>
-          </form>
+          
           <form method="post">
             <button class="btn btn-outline-info" name="cartBtn" type="submit">Cart
               <?php if (isset($_SESSION['cartItems'])) {
@@ -66,7 +61,15 @@
               </button>
             </form>
           </div>
-
+          <form method="post">
+            <?php
+            if (isset($_SESSION['user'])) {
+              echo '<button class="btn btn-outline-danger" name="logoutBtn" type="submit">Logout</button>';
+            } else {
+              echo '<button class="btn btn-outline-danger" name="loginBtn" type="submit">Login</button>';
+            }
+            ?>
+          </form>
         </div>
       </div>
     </nav>

@@ -51,3 +51,8 @@ if(str_contains($actual_path,"/detail-product")){
 
   require("./public_html/pages/product-detail.php");
 }
+if(str_contains($actual_path,"/category")){
+  $page_title = "category";
+
+  require("./public_html/pages/category.php");
+}

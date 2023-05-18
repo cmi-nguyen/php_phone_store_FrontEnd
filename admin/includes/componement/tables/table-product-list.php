@@ -2,12 +2,25 @@
     <caption>List of Products</caption>
     <thead class="table-dark">
         <tr>
-            <th scope="col">Product ID</th>
-            <th scope="col">Product Name</th>
-            <th scope="col">Price</th>
-            <th scope="col">Brand Name</th>
-            <th scope="col">Stock</th>
+            <th scope="col">
+                <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                    href="?sort=productID">Product ID</a>
+            </th>
+            <th scope="col">
 
+                <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                    href="?sort=productName">Product Name</a>
+            </th>
+            <th scope="col">
+                <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                    href="?sort=price">Price</a>
+            </th>
+            <th scope="col">Brand Name
+            </th>
+            <th scope="col">
+                <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                    href="?sort=stock">Stock</a>
+            </th>
             <th scope="col">Actions</th>
         </tr>
     </thead>
@@ -31,6 +44,12 @@
         }
         $i = 0;
         $j = 1;
+        if (isset($_GET['sort'])) {
+            $sorted = array_column($resp, $_GET['sort']);
+            array_multisort($sorted, SORT_ASC, $resp); 
+             
+        }
+
         foreach ($resp as $rs) {
             if ($i++ < $numberOfItemPerPage * ($currentPage - 1))
                 continue;
@@ -69,3 +88,4 @@
     </tbody>
 
 </table>
+

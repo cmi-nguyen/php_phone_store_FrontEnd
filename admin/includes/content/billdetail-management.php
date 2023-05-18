@@ -1,5 +1,5 @@
 <div class="container">
-    <h3>Order Management</h3>
+    <h3>Bill Detail</h3>
     <div class="container">
         <form method="post">
             <div class="row">
@@ -14,8 +14,8 @@
             </div>
         </form>
         <?php
-        require_once("./includes/scripts/handlers/bill-management-form-handler.php");
-        require_once("./includes/componement/tables/table-bill-list.php");
+        //require_once("./includes/scripts/handlers/bill-management-form-handler.php");
+        require_once("./includes/componement/tables/table-billdetail.php");
         //require_once("./includes/componement/forms/form-add-product.php");
         ?>
     </div>

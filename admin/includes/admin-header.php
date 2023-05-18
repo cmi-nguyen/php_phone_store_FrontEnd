@@ -40,9 +40,14 @@
             <a class="nav-link active" href="../">Visit site</a>
           </li>
         </ul>
+        <div class="d-flex align-item-center">
+          <p>Hello admin</p>
         <form method="post">
           <button class="btn btn-outline-info" type="submit" name="logoutBtn">Logout</button>
         </form>
+        </div>
+
+        
       </div>
     </div>
   </nav>
