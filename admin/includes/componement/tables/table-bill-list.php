@@ -1,5 +1,5 @@
 <table class="table caption-top">
-    <caption>List of Brands</caption>
+    <caption>List of Orders</caption>
     <thead class="table-dark">
         <tr>
             <th scope="col">Bill ID</th>    

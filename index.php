@@ -10,7 +10,9 @@ class cartItem{
 class user{
   public $userID;
   public $userName;
+  public $password;
   public $name;
+  public $email;
   public $accessLevel;
 }
 
@@ -55,4 +57,26 @@ if(str_contains($actual_path,"/category")){
   $page_title = "category";
 
   require("./public_html/pages/category.php");
+}
+
+if ($actual_path == "/profile") {
+  $page_title = "product";
+  
+  require("./public_html/pages/profile.php");
+
+}
+if(str_contains($actual_path,"/order")){
+  $page_title = "category";
+
+  require("./public_html/pages/order.php");
+}
+if(str_contains($actual_path,"/edit-profile")){
+  $page_title = "category";
+
+  require("./public_html/pages/edit-profile.php");
+}
+if(str_contains($actual_path,"/detail-order")){
+  $page_title = "category";
+
+  require("./public_html/pages/detail-order.php");
 }

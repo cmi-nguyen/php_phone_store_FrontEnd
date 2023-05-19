@@ -2,6 +2,7 @@
 require_once("./includes/scripts/api/APIs.php");
 $url = 'http://localhost:8080/bill';
 $resp = getList($url);
+
 // calculate best sell
 $todaySale = 0;
 $monthlySale = 0;
@@ -16,7 +17,12 @@ foreach ($resp as $rs) {
     if (str_contains($rs->date, date("y"))) {
         $yearlySale += $rs->total;
     }
+// get the best selling item
+$url2 =    'http://localhost:8080/billdetail';
+$resp2 = getList($url2);
+foreach ($resp2 as $rs2 => $value) {
     
+}
 } ?>
 <div class="container">
     <h3>Dashboard</h3>

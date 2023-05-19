@@ -58,7 +58,9 @@ curl_setopt_array($curl, array(
 ));
 $resp = curl_exec($curl);
 
-
+if(curl_exec($curl)==false){
+    echo "Error: ".curl_error($curl);
+}
 
 curl_close($curl);
 }
@@ -77,7 +79,9 @@ curl_setopt_array($curl, array(
     CURLOPT_HTTPHEADER=> array('Content-Type: application/json')
 ));
 $resp = curl_exec($curl);
-
+if(curl_exec($curl)==false){
+    echo "Error: ".curl_error($curl);
+}
 
 
 curl_close($curl);
@@ -97,7 +101,9 @@ curl_setopt_array($curl, array(
 ));
 $resp = curl_exec($curl);
 
-
+if(curl_exec($curl)==false){
+    echo "Error: ".curl_error($curl);
+}
 
 curl_close($curl);
 }

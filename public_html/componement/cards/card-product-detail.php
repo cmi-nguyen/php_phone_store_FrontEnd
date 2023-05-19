@@ -25,6 +25,7 @@ $resp = getSingleItem($url); ?>
                         <?php echo 'In Stock: ' . $resp->stock ?>
                     </h4>
                     <form method="post">
+                        <input type="hidden" name="id" value="<?php echo $resp->productID ?>">
                         <button class="btn btn-primary" name="addToCartBtn">Add to cart</button>
                     </form>
 

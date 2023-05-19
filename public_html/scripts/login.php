@@ -10,7 +10,9 @@ if (array_key_exists('loginBtn', $_POST)) {
             $loggedInUser = new user();
             $loggedInUser->userID=$rs->userID;
             $loggedInUser->userName=$rs->userName;
+            $loggedInUser->password=$rs->password;
             $loggedInUser->name=$rs->name;
+            $loggedInUser->email=$rs->email;
             $loggedInUser->accessLevel=$rs->accessLevel;
             $_SESSION['user'] = $loggedInUser;
             break;
