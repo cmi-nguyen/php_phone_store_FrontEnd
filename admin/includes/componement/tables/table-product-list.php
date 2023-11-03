@@ -27,8 +27,8 @@
     <tbody>
         <?php
         require_once("./includes/scripts/api/APIs.php");
-        $url1 = 'http://localhost:8080/product';
-        $url2 = 'http://localhost:8080/brand';
+        $url1 = 'http://localhost:8090/product';
+        $url2 = 'http://localhost:8090/brand';
 
         $resp = getList($url1);
         $brands = getList($url2);

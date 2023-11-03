@@ -11,7 +11,7 @@
     <tbody>
         <?php
         require_once("./includes/scripts/api/APIs.php");
-        $url= 'http://localhost:8080/brand';
+        $url= 'http://localhost:8090/brand';
         $resp = getList($url);
 
         foreach ($resp as $rs) {

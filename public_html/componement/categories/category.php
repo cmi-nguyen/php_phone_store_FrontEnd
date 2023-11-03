@@ -3,7 +3,7 @@
     <div class="d-flex align-items-start flex-wrap">
         <?php
         require_once("admin\includes\scripts\api\APIs.php");
-        $url = 'http://localhost:8080/product';
+        $url = 'http://localhost:8090/product';
         $resp = getList($url);
         $i=0;
         foreach ($resp as $rs) {

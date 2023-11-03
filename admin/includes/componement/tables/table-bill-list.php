@@ -14,7 +14,7 @@
     <tbody>
         <?php
         require_once("./includes/scripts/api/APIs.php");
-        $url = 'http://localhost:8080/bill';
+        $url = 'http://localhost:8090/bill';
 
         $resp = getList($url);
 
@@ -24,7 +24,7 @@
             echo '<th scope="row">' . $rs->billID . '</th>';
             echo '<td>';
           
-            $url2 = 'http://localhost:8080/user/' . '' . $rs->userID;
+            $url2 = 'http://localhost:8090/user/' . '' . $rs->userID;
             $resp2 = getSingleItem($url2);
             echo $resp2->userName;
             echo '</td>';

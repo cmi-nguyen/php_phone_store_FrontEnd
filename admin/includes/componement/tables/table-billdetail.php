@@ -11,7 +11,7 @@
     <tbody>
         <?php
         require_once("./includes/scripts/api/APIs.php");
-        $url = 'http://localhost:8080/billdetail';
+        $url = 'http://localhost:8090/billdetail';
         $total = 0;
         $resp = getList($url);
         foreach ($resp as $rs) {

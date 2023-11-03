@@ -1,7 +1,8 @@
 <?php
 require_once("./includes/scripts/api/APIs.php");
-$url = 'http://localhost:8080/bill';
+$url = 'http://localhost:8090/bill';
 $resp = getList($url);
+
 
 // calculate best sell
 $todaySale = 0;
@@ -18,11 +19,24 @@ foreach ($resp as $rs) {
         $yearlySale += $rs->total;
     }
 // get the best selling item
-$url2 =    'http://localhost:8080/billdetail';
+$url2 = 'http://localhost:8090/product';
 $resp2 = getList($url2);
-foreach ($resp2 as $rs2 => $value) {
-    
+$listProduct = array();
+$i=0;
+foreach ($resp2 as $rs2) {
+    $product = new product();
+    $product->productID = $rs2->productID;
+    $product->productName = $rs2->productName;
+    $product->price = $rs2->price;
+    $product->qtySold=0;
+    $listProduct[$i] = $product;
+    $i++;
 }
+// get qty sold
+$url3 = 'http://localhost:8090/billdetail';
+$resp3 = getList($url3);
+
+
 } ?>
 <div class="container">
     <h3>Dashboard</h3>

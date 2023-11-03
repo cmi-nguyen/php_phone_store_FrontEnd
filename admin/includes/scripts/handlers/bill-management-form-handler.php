@@ -3,7 +3,7 @@
      
         
         if (array_key_exists('aproveBtn', $_POST)) {
-            $url='http://localhost:8080/bill/'.$_POST['id'];
+            $url='http://localhost:8090/bill/'.$_POST['id'];
             $data['status']=true;
             putAPI($data,$url);
         }

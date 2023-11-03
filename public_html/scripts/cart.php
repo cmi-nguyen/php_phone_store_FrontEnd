@@ -30,7 +30,7 @@ if (array_key_exists('decreaseBtn', $_POST)) {
 if (array_key_exists('checkoutBtn', $_POST)) {
     if (sizeOf($_SESSION['cartItems']) > 0) {
         // create bill
-        $url = 'http://localhost:8080/bill';
+        $url = 'http://localhost:8090/bill';
         $resp = getList($url);
         $data['billID'] = sizeof($resp);
         $data['userID'] = $_SESSION['user']->userID;
@@ -41,7 +41,7 @@ if (array_key_exists('checkoutBtn', $_POST)) {
         // add bill detail
 
         foreach ($_SESSION['cartItems'] as $cartItem) {
-            $url2 = 'http://localhost:8080/billdetail';
+            $url2 = 'http://localhost:8090/billdetail';
             $detailResp = getList($url2);
             $data2['billDetailID'] = sizeof($detailResp);
             $data2['billID'] = $data['billID'];

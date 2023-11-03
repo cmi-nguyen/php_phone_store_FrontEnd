@@ -9,7 +9,7 @@
             echo  $_POST['id'];
         }
         function deleteItem(){
-            $url= 'http://localhost:8080/brand/'.''.$_POST['id'];
+            $url= 'http://localhost:8090/brand/'.''.$_POST['id'];
             deleteAPI($url);
         }
         function editItem(){
@@ -20,7 +20,7 @@
             search();
         }
         if (array_key_exists('button3', $_POST)) {
-            $url= 'http://localhost:8080/brand';
+            $url= 'http://localhost:8090/brand';
             $data = $_POST;
             unset($data['button3']);
             $rs = getList($url);

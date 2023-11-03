@@ -2,7 +2,7 @@
 $curl = curl_init();
 curl_setopt_array($curl, array(
     CURLOPT_RETURNTRANSFER => 0,
-    CURLOPT_URL => 'http://localhost:8080/user',
+    CURLOPT_URL => 'http://localhost:8090/user',
     CURLOPT_USERAGENT => 'test cURL Request',
     CURLOPT_SSL_VERIFYPEER => false
 ));

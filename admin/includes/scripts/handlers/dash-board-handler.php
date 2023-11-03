@@ -1,5 +1,5 @@
 <?php require_once("./admin/includes/scripts/api/APIs.php");
-$url = 'http://localhost:8080/bill';
+$url = 'http://localhost:8090/bill';
 $resp = getList($url);
 // calculate best sell
 $todaySale = 0;

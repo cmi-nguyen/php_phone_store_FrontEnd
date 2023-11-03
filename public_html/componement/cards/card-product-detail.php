@@ -1,5 +1,5 @@
 <?php require_once("admin\includes\scripts\api\APIs.php");
-$url = 'http://localhost:8080/product/' . $_GET['id'];
+$url = 'http://localhost:8090/product/' . $_GET['id'];
 $resp = getSingleItem($url); ?>
 <div class="container">
     <div class="card mb-3" style="max-width: 1200px;">

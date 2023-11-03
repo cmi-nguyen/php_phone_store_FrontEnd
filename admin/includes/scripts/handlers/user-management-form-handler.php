@@ -23,7 +23,7 @@
             // add user 
            // var_dump($_POST);
             
-            $url= 'http://localhost:8080/user';
+            $url= 'http://localhost:8090/user';
             $data = $_POST;
             unset($data['button3']);
             $rs = getList($url);

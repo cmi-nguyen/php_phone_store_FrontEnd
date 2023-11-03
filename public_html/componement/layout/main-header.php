@@ -33,7 +33,7 @@
             <ul class="dropdown-menu">
               <?php
               require_once("admin\includes\scripts\api\APIs.php");
-              $url = 'http://localhost:8080/brand';
+              $url = 'http://localhost:8090/brand';
               $respBrand = getList($url);
               foreach ($respBrand as $resBrand) {
                 # code...

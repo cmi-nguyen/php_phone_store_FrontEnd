@@ -1,7 +1,7 @@
 <?php 
 
 require("./includes/scripts/api/APIs.php");
-$url = 'http://localhost:8080/product/' . '' . $_GET['id'];
+$url = 'http://localhost:8090/product/' . '' . $_GET['id'];
 $resp = getSingleItem($url);
 
 ?>

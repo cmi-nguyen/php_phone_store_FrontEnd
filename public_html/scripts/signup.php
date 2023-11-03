@@ -1,6 +1,6 @@
 <?php require_once("admin\includes\scripts\api\APIs.php");
 require_once("./public_html/scripts/validateInput.php");
-$url = 'http://localhost:8080/user';
+$url = 'http://localhost:8090/user';
 $resp = getList($url);
 
 if (array_key_exists('signupBtn', $_POST)) {

@@ -1,5 +1,11 @@
 <?php
+class product{
+    public $productID;
+    public $productName;
+    public $price; 
+    public $qtySold;
 
+}
 
 $url_requested = $_SERVER['REQUEST_URI'];
 $url_len = strlen($url_requested);

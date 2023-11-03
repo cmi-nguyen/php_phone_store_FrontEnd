@@ -2,8 +2,8 @@
     <div class="col">
         <?php
         require_once("admin\includes\scripts\api\APIs.php");
-        $url = 'http://localhost:8080/product';
-        $url1 = 'http://localhost:8080/brand';
+        $url = 'http://localhost:8090/product';
+        $url1 = 'http://localhost:8090/brand';
         $resp = getList($url);
         $respBrand = getList($url1);
         foreach ($respBrand as $respBr) {

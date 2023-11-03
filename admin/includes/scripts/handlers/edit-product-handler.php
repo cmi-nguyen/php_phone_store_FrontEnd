@@ -2,7 +2,7 @@
 require_once("./includes/scripts/api/APIs.php");
 function updateItem()
 {
-    $url = 'http://localhost:8080/product/' . $_GET['id'];
+    $url = 'http://localhost:8090/product/' . $_GET['id'];
     $data['productID'] = $_GET['id'];
     $data['productName'] = $_POST['productName'];
     $data['price'] = $_POST['price'];
@@ -14,7 +14,7 @@ function updateItem()
 }
 function deleteItem()
 {
-    $url = 'http://localhost:8080/product/' . $_GET['id'];
+    $url = 'http://localhost:8090/product/' . $_GET['id'];
     deleteAPI($url);
 }
 function redirectAction(){
